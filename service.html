@@ -1,0 +1,668 @@
+<p?php ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SHS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style>
+        /* Fix for dropdown visibility on mobile */
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown.open .dropdown-menu {
+            display: block;
+            position: absolute;
+            background-color: white;
+            z-index: 1000;
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Adjust logo size as needed */
+        }
+
+        .navbar-nav > li > a {
+            color: gold;
+        }
+
+        .dropdown-menu a p {
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0; /* Remove extra space around text */
+        }
+
+        .navbar-toggle {
+            border-color: transparent;
+        }
+        
+        /* Fix navbar behavior on mobile */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                width: 100%;
+                text-align: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+                float: none;
+                background-color: white;
+            }
+
+            .dropdown-menu li {
+                text-align: center;
+            }
+
+            .navbar-nav-first > li > a {
+                color: #333; /* Change link color for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- LOGO IMAGE HERE -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="index.php" class="smoothScroll" >Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                              Projects <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="butajira_school.php"><p>Butajira School</p></a></li>
+                            <li><a href="butajira_hospital.php"><p>Butajira Hospital</p></a></li>
+                            <li><a href="Kebridehar_hospital.php"><p>Kebridehar Hospital</p></a></li>
+                            <li><a href="KaramarMCH.php"><p>KaramarMCH</p></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.php" class="smoothScroll" style="color:gold;">Services</a></li>
+                    <li><a href="gallery.php" class="smoothScroll">Gallery</a></li>
+                    <li><a href="vacancy.php" class="smoothScroll">Vacancy</a></li>
+                    <li><a href="about.php" class="smoothScroll">About</a></li>
+                    <li><a href="Contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<style>
+/* Styles for the logo */
+.navbar-brand .logo {
+    height: 75px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    .navbar-brand .logo {
+        height: 50px; /* Reduce logo size on mobile */
+    }
+
+    .navbar-brand {
+        margin-left: 0; /* Reset margins for mobile view */
+        margin-top: 0;
+    }
+
+    .navbar-nav-first {
+        margin-left: 0;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .navbar-brand {
+        margin-left: -125px;
+        margin-top: -20px;
+    }
+
+    .navbar-nav-first {
+        margin-left: 100px;
+        margin-top: 16px;
+    }
+}
+</style> 
+        <!-- HOME -->
+        <section id="home" class="slider" data-stellar-background-ratio="0.5" style="height: 60vh; background-image: url('images/pexels-pixabay-159306.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; padding: 0; position: relative;">
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+    
+    <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; display: flex; justify-content: center; align-items: center; height: 100%;">
+        <div class="col-md-8 col-sm-12 text-center">
+            <h1 style="color: white; font-family: inherit; font-weight: bold; font-size: 42px;">
+               OUR SERVICES
+            </h1>
+        </div>
+    </div>
+</section>
+
+      
+        <div class="section-title wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 90px; margin-bottom: 5px; text-align: center;">
+    <h2>SERVICES WE PROVIDE </h2>
+</div>
+
+<section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>Turn-key Project Management</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>Fundamentally, ‘turn-key’ describes a form of engagement between a client and an implementing firm in which the firm takes on the responsibility of developing a product that is complete and ready to use right away. A turn-key project is one that is conceived, constructed, and equipped with all necessary facilities by an implementing firm and handed over to the client complete and ready for operation.
+
+We at SHS, have developed a business-friendly and cost-effective model to implement this form of project management in the health programs’ arena. We take the concept of a project from its inception- plan it, execute it, monitor and control the process and seamlessly integrate it into the client’s operations in a customized manner. This significantly reduces the hassles involved with planning and executing projects from the side of the client. Give us your project and see it grow expeditiously. We work strictly on your behalf.</p>
+                               
+                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 30px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/key.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/chain.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>Supply chain management and consulting</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+“Supply chain management plays an important role in equitable access to essential medicines and services. Countries (especially low and middle income) face numerous challenges in managing their supply chains, including weak infrastructure, poor data quality, and limited resources”
+<br/>
+<br/>
+– Ghaffar, A., Rashidian, A., Khan, W. et al.
+<br/>
+<br/>
+Health facility managers have enough on their plates running their organizations before they have to deal with the enormously unpredictable medical supply chain. We at SHS are working with a variety of influencers on different nodes of the medical supply chain to ensure that operators have all that they need to focus on their services. We are leveraging our expertise, our networks and the exciting advancements in technology to find business-ready solutions to the problems in the medical supply chain. Contact us and we can find a solution tailored to your specific needs.</p>
+                               
+                                 </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>ICT Solutions for health</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>Leveraging ICT to revamp health systems at all levels is one of the ideals on which SHS was founded. We are working on new, from scratch EMR, EHR and digital health solutions customized to the inner workings of the Ethiopian healthcare value chain. We will work with interested clients to provide them with solutions that fit their needs and wants.</p>
+                               
+                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 0px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/ict.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/pha.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>Pharmaceuticals and Medical Devices</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+                                
+                                SHS is currently in the process of conducting a needs and feasibility assessment of the most necessary pharmaceuticals and medical devices in the Ethiopian market. Aside from the work we are currently doing in supply chain management and consulting, we aim to be a part of the solution in the more direct sense. Pharmaceuticals and medical devices can be more available, more cost-effective and economy-friendly with the right experience, networks and effort. SHS aims to soon enter the medical value chain in a studied and planned way.</p>                              
+                                 </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>Incubating innovation in health</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+                                Tech start-ups have access to mentorship and guidance from industry tycoons and professionals in their field. History shows just how invaluable that has been to the tech world. We at SHS want to be a hub where innovators in healthcare come to nurture their ideas and products. We will dedicate our team’s combined expertise in the fields of healthcare, technology and business development to work with innovators in health and help them achieve market. We will provide services free of charge to start-up innovators. Contact us if you want to learn more.</p>
+                               
+                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 0px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/inov.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/hr.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>  Human Resources for Health
+                                (Recruitment and Management)</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+Anyone who has gone through the process of selecting, recruiting, developing and retaining professionals knows just how complicated the endeavour can be. SHS has experts who have gone through this process hundreds of times and near-perfected it. Why go through the trouble when we can do the work for you, through a time-tested, proven process. Contact us.
+</p> 
+</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2> Implementing Quality Management Systems in Healthcare</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+                               
+                                Healthcare is a sensitive service industry. The cost of lacking quality in care could potentially be devastating. Lives are literally at stake. Why wait when you could use our services to plan and implement quality management systems and see your service get better and your market flourish. Contact us.   
+                            </p>
+                               
+                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 0px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/imp.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/condact.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 100px;">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2>   Conducting feasibility studies and developing business plans</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+                               
+                                Starting a business can be a daunting experience. The prospect of bureaucratic hurdles and red tape is on its own sure to drive a start-up away. We at SHS, don’t write up a study just to say a business is feasible. We pre-emptively identify all potential problem scenarios down the road and develop intervention options to assure you that you have your bases covered. Do you have a business idea you believe could revolutionize the health market, but don’t know where to begin. Contact us. We don’t just want to work for you; we want to work with you!
+                            </p> 
+</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="about" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about-info">
+                            <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                
+                                <h2> Establishing and organizing hospitals, specialty clinics, medical offices</h2>
+                            </div>
+
+                            <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                <p>
+                               
+                                Members of our team have in one form of another, all been a part of concerted efforts to build health facilities from scratch. If you’re establishing a hospital or clinic and looking for someone to advise you, consult you or even work on your behalf, look no further. Contact us!
+                                 </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12" style="margin-top: 0px;">
+                        <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                            <img src="images/est.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- FOOTER -->
+     <footer id="footer" style="background-color: #00001a; color: white; margin-top: 100px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+         <div class="row" style="display: flex; justify-content: space-between;">
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px;">
+                <div class="footer-info">
+                    <div class="section-title">
+                        <h2 style="color: white;">Find us</h2>
+                    </div>
+                    <address style="color: white;">
+                        <p style="color: white;">Nathel Building 4th Floor Office No. 2,<br/> Piassa in front of Central Statistics Agency <br/>Addis Ababa, Ethiopia</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px;">
+                <div class="footer-info">
+                    <div class="section-title">
+                        <h2 style="color: white;">Reservation</h2>
+                    </div>
+                    <address style="color: white;">
+                        <p><a href="#" style="color: white;">+251922339595 </a> | <a href="#" style="color: white;">+251935825919</a></p>
+                        <p>
+                            <a href="mailto:afrimectg@gmail.com" style="color: white;">info@company.com</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px; margin-top:-10px;">
+                <div class="footer-info footer-open-hour">
+                    <div class="section-title">
+                        <h2 style="color: white;">Open Hours</h2>
+                    </div>
+                    <div>
+                        <p> Mon - Fri 8:00AM - 5:30PM</p>
+                        <div>
+                            Tuesday to Friday
+                            <p>7:00 AM - 9:00 PM</p>
+                        </div>
+                        <div>
+                        Satrday 
+                            <p>8:00AM - 12:00PM</p>
+                        </div>
+                        <div>
+                        Sunday - CLOSED
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px;">
+                <div class="social">
+                    <div class="section-title">
+                        <h2 style="color: white;">Follow Us</h2>
+                    </div>
+                    <ul style="list-style: none; padding: 0; display: flex;">
+                        <li style="margin-right: 10px;">
+                            <a href="#" class="fa fa-facebook-square" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                        <li style="margin-right: 10px;">
+                            <a href="#" class="fa fa-twitter" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                        <li style="margin-right: 10px;">
+                            <a href="#" class="fa fa-instagram" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-google" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</footer>
+
+       <!-- SCRIPTS -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/filter.js"></script>
+
+
+    </body>
+</html>

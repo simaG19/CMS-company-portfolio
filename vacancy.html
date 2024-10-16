@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SHS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <style>
+        /* Fix for dropdown visibility on mobile */
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown.open .dropdown-menu {
+            display: block;
+            position: absolute;
+            background-color: white;
+            z-index: 1000;
+        }
+
+        .navbar-brand img {
+            height: 50px; /* Adjust logo size as needed */
+        }
+
+        .navbar-nav > li > a {
+            color: gold;
+        }
+
+        .dropdown-menu a p {
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0; /* Remove extra space around text */
+        }
+
+        .navbar-toggle {
+            border-color: transparent;
+        }
+        
+        /* Fix navbar behavior on mobile */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                width: 100%;
+                text-align: center;
+            }
+
+            .dropdown-menu {
+                position: static;
+                float: none;
+                background-color: white;
+            }
+
+            .dropdown-menu li {
+                text-align: center;
+            }
+
+            .navbar-nav-first > li > a {
+                color: #333; /* Change link color for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- LOGO IMAGE HERE -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                   <li><a href="index.php" class="smoothScroll" >Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                              Projects <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="butajira_school.php"><p>Butajira School</p></a></li>
+                            <li><a href="butajira_hospital.php"><p>Butajira Hospital</p></a></li>
+                            <li><a href="Kebridehar_hospital.php"><p>Kebridehar Hospital</p></a></li>
+                            <li><a href="KaramarMCH.php"><p>KaramarMCH</p></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="service.php" class="smoothScroll">Services</a></li>
+                    <li><a href="gallery.php" class="smoothScroll">Gallery</a></li>
+                    <li><a href="vacancy.php" class="smoothScroll" style="color:gold;">Vacancy</a></li>
+                    <li><a href="about.php" class="smoothScroll">About</a></li>
+                    <li><a href="Contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<style>
+/* Styles for the logo */
+.navbar-brand .logo {
+    height: 75px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    .navbar-brand .logo {
+        height: 50px; /* Reduce logo size on mobile */
+    }
+
+    .navbar-brand {
+        margin-left: 0; /* Reset margins for mobile view */
+        margin-top: 0;
+    }
+
+    .navbar-nav-first {
+        margin-left: 0;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .navbar-brand {
+        margin-left: -125px;
+        margin-top: -20px;
+    }
+
+    .navbar-nav-first {
+        margin-left: 100px;
+        margin-top: 16px;
+    }
+}
+</style> 
+        <!-- HOME -->
+        <section id="home" class="slider" data-stellar-background-ratio="0.5" style="height: 60vh; background-image: url('images/pexels-pixabay-159306.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; padding: 0; position: relative;">
+    <!-- Overlay -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+    
+    <div class="container" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; display: flex; justify-content: center; align-items: center; height: 100%;">
+        <div class="col-md-8 col-sm-12 text-center">
+            <h1 style="color: white; font-family: inherit; font-weight: bold; font-size: 42px;">
+                Job Openings 
+            </h1>
+        </div>
+    </div>
+</section>
+        <!-- MENU-->
+       
+        <!-- CONTACT -->
+        <section id="contact" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="section-title">
+            <h2 style=" "></h2>
+        </div>
+        <div class="row">
+            <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.1s">
+                <div style="max-width: 600px; margin: 0 auto; background-color: #F5F5F5; padding: 20px; border-radius: 10px; border: 2px solid #1A2B49;">
+                    <h1 style="color: #1A2B49; font-size: 24px;">Job Title: Sales representative</h1>
+
+                    <div style="margin-bottom: 20px;">
+                        <strong style="display: block; font-size: 18px;">Job Type: Onsite - Permanent (Full-time)</strong>
+                        <p style="margin: 5px 0 10px 0;">Primary duties are to interest owners in services and to address clients’ questions and concerns. 
+Sales associates should be able to demonstrate our services and advise clients on various aspects of lighting decoration. 
+Responsible for all sales activities in assigned regions, city or subcity.</p>
+                    </div>
+
+
+                    <div style="margin-bottom: 20px;">
+                        <strong style="display: block; font-size: 18px;">Experience Level: Expert</strong>
+                        <p style="margin: 5px 0 10px 0;">Work Location: Addis Ababa, Ethiopia</p>
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <strong style="display: block; font-size: 18px;">Apply</strong>
+                        <div style="margin-bottom: 20px;">
+                   
+                        <p style="margin: 5px 0 10px 0;"><a href="#" data-toggle="modal" data-target="#jobModal" style="color: #1A73E8;">View More</a></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+      
+
+
+<div class="modal fade" id="jobModal" tabindex="-1" role="dialog" aria-labelledby="jobModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="jobModalLabel">Sales Representative - Job Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Job Responsibilities:</strong></p>
+                    <ul>
+                        <li>Generate sales in the assigned region or city.</li>
+                        <li>Communicate effectively with customers.</li>
+                        <li>Demonstrate our services and advise on lighting decoration aspects.</li>
+                    </ul>
+                    <p><strong>Qualifications:</strong></p>
+                    <ul>
+                        <li>3+ years of experience in sales.</li>
+                        <li>Expert communication skills.</li>
+                        <li>Willing to work on-site in Addis Ababa.</li>
+                    </ul>
+                    <p><strong> Describtion</strong></p>
+                    <ul>
+                    
+                        <p> Kelem Tutors is looking for a motivated Sales Coordinator to join our team and help us grow by connecting with potential clients and closing deals. In this role, you’ll be responsible for reaching out to prospective clients, turning inquiries into confirmed sales, and maintaining strong relationships with both new and existing customers. If you’re proactive, great with people, and skilled at closing deals, we want to hear from you!
+                        </p>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a href="mailto:simonwubs19@gmail.com" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+        <!-- FOOTER -->
+        <footer id="footer" style="background-color: #00001a; color: white; margin-top: 100px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+         <div class="row" style="display: flex; justify-content: space-between;">
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px;">
+                <div class="footer-info">
+                    <div class="section-title">
+                        <h2 style="color: white;">Find us</h2>
+                    </div>
+                    <address style="color: white;">
+                        <p style="color: white;">Nathel Building 4th Floor Office No. 2,<br/> Piassa in front of Central Statistics Agency <br/>Addis Ababa, Ethiopia</p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px;">
+                <div class="footer-info">
+                    <div class="section-title">
+                        <h2 style="color: white;">Reservation</h2>
+                    </div>
+                    <address style="color: white;">
+                        <p><a href="#" style="color: white;">+251922339595 </a> | <a href="#" style="color: white;">+251935825919</a></p>
+                        <p>
+                            <a href="mailto:afrimectg@gmail.com" style="color: white;">info@company.com</a>
+                        </p>
+                    </address>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px; margin-top:-10px;">
+                <div class="footer-info footer-open-hour">
+                    <div class="section-title">
+                        <h2 style="color: white;">Open Hours</h2>
+                    </div>
+                    <div>
+                        <p> Mon - Fri 8:00AM - 5:30PM</p>
+                        <div>
+                            Tuesday to Friday
+                            <p>7:00 AM - 9:00 PM</p>
+                        </div>
+                        <div>
+                        Satrday 
+                            <p>8:00AM - 12:00PM</p>
+                        </div>
+                        <div>
+                        Sunday - CLOSED
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-8" style="width: 23%; margin-bottom: 20px;">
+                <div class="social">
+                    <div class="section-title">
+                        <h2 style="color: white;">Follow Us</h2>
+                    </div>
+                    <ul style="list-style: none; padding: 0; display: flex;">
+                        <li style="margin-right: 10px;">
+                            <a href="#" class="fa fa-facebook-square" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                        <li style="margin-right: 10px;">
+                            <a href="#" class="fa fa-twitter" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                        <li style="margin-right: 10px;">
+                            <a href="#" class="fa fa-instagram" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-google" style="background-color: #ffc107; padding: 10px; border-radius: 50%; color: white; text-decoration: none;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</footer>
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/filter.js"></script>
+
+
+
+    </body>
+</html>
