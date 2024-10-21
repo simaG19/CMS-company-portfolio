@@ -229,34 +229,63 @@
 
         <!-- ABOUT -->
         <section id="about" data-stellar-background-ratio="0.5">
-            
-
             <div style="background-color: #FFC107; padding: 40px; text-align: left; color: #333; border-radius: 10px; width: 80%; margin: 0 auto;">
-    <h2 style="font-size: 24px; font-weight: bold;">Build Your Dream</h2>
-    <h1 style="font-size: 36px; font-weight: bold;">A combined experience of 20+ years</h1>
-    <p style="font-size: 16px;">We deliver the best healthcare services in Ethiopia.</p>
-    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-    <div style="text-align: center;">
-    <h2 id="counter1" style="font-size: 48px; font-weight: bold;"><strong>20+</strong></h2>
-    <p style="font-size: 14px;">Combined experience in health systems management</p>
-</div>
-<div style="text-align: center;">
-    <h2 style="font-size: 48px; font-weight: bold;">3</h2>
-    <p style="font-size: 14px;">Ongoing Projects</p>
-</div>
-<div style="text-align: center;">
-    <h2 id="counter3" style="font-size: 48px; font-weight: bold;">10</h2>
-    <p style="font-size: 14px;">Experienced team members and counting</p>
-</div>
-
-    </div>
-    <div style="text-align: center; margin-top: 20px;">
-    <a href="Contact.html" style="display: inline-block; background-color: #333; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">WORK WITH US</a>
-</div>
-</div>
-
+                <h2 style="font-size: 24px; font-weight: bold;">Build Your Dream</h2>
+                <h1 style="font-size: 36px; font-weight: bold;">A combined experience of 20+ years</h1>
+                <p style="font-size: 16px;">We deliver the best healthcare services in Ethiopia.</p>
+                <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+                    <div style="text-align: center;">
+                        <h2 id="counter1" style="font-size: 48px; font-weight: bold;">0</h2>
+                        <p style="font-size: 14px;">Combined experience in health systems management</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h2 id="counter2" style="font-size: 48px; font-weight: bold;">0</h2>
+                        <p style="font-size: 14px;">Ongoing Projects</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h2 id="counter3" style="font-size: 48px; font-weight: bold;">0</h2>
+                        <p style="font-size: 14px;">Experienced team members and counting</p>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="Contact.html" style="display: inline-block; background-color: #333; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">WORK WITH US</a>
+                </div>
+            </div>
+        
+            <script>
+                // Counting function with an optional symbol
+                function countUp(id, start, end, duration, symbol = '') {
+                    let current = start;
+                    const range = end - start;
+                    const increment = end > start ? 1 : -1;
+                    const stepTime = Math.abs(Math.floor(duration / range));
+                    const element = document.getElementById(id);
+        
+                    const timer = setInterval(function() {
+                        current += increment;
+                        element.textContent = current + symbol;
+                        if (current == end) {
+                            clearInterval(timer);
+                        }
+                    }, stepTime);
+                }
+        
+                // Trigger when the section comes into view
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            countUp('counter1', 0, 20, 2000, '+'); // Count from 0 to 20 with '+'
+                            countUp('counter2', 0, 3, 1500);        // Count from 0 to 3 without symbol
+                            countUp('counter3', 0, 10, 1800);       // Count from 0 to 10 without symbol
+                            observer.disconnect(); // Stop observing once counted
+                        }
+                    });
+                }, { threshold: 0.5 }); // Start counting when 50% of the section is visible
+        
+                observer.observe(document.getElementById('about'));
+            </script>
         </section>
-
+          
         
         <section id="team" data-stellar-background-ratio="0.5">
             <div class="container">
@@ -597,8 +626,8 @@ function toggleAnswer(button) {
                     <div>
                         <p> Mon - Fri 8:00AM - 5:30PM</p>
                         <div>
-                            Tuesday to Friday
-                            <p>7:00 AM - 9:00 PM</p>
+                            
+                            <p></p>
                         </div>
                         <div>
                         Satrday 
@@ -654,6 +683,7 @@ function toggleAnswer(button) {
         <script src="js/smoothscroll.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/filter.js"></script>
-
+       
+        <script src="//code.tidio.co/rjras13uxnl1zhkqwy6ijcg87f4sezbc.js" async></script>
     </body>
 </html>
