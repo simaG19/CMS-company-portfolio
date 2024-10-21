@@ -86,14 +86,14 @@
   }
 
   ::-webkit-scrollbar{
-    width: 16px;
-    height: 8px;
+    width: 6px;
+    height: 2px;
     border-radius: 8px;
   }
 
   ::-webkit-scrollbar-thumb {
     cursor: pointer;
-    border-radius: 24px;
+    border-radius: 0px;
     background: gold;
   }
 
