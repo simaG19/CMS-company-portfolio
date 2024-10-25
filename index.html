@@ -88,7 +88,6 @@
     <!-- MENU -->
     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
         <div class="container">
-
             <div class="navbar-header">
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon icon-bar"></span>
@@ -108,7 +107,7 @@
                     <li><a href="#home" class="smoothScroll" style="color:gold;">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                              Projects <span class="caret"></span>
+                            Projects <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="butajira_school.html"><p>Butajira School</p></a></li>
@@ -126,6 +125,38 @@
             </div>
         </div>
     </section>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Handle dropdown toggle on mobile
+            $('.dropdown-toggle').click(function(e) {
+                e.preventDefault();
+                const $dropdown = $(this).parent('.dropdown');
+                $dropdown.toggleClass('open');
+                $dropdown.find('.dropdown-menu').toggle();
+            });
+
+            // Handle navbar toggle button
+            $('.navbar-toggle').click(function() {
+                const $navbarCollapse = $('.navbar-collapse');
+                $navbarCollapse.collapse('toggle');
+            });
+
+            // Close the dropdown if clicked outside
+            $(document).click(function(e) {
+                if (!$(e.target).closest('.dropdown').length) {
+                    $('.dropdown').removeClass('open');
+                    $('.dropdown-menu').hide();
+                }
+                if (!$(e.target).closest('.navbar-collapse').length) {
+                    $('.navbar-collapse').collapse('hide');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
 
@@ -139,7 +170,7 @@
 /* Media query for mobile screens */
 @media (max-width: 767px) {
     .navbar-brand .logo {
-        height: 50px; /* Reduce logo size on mobile */
+        height: 40px; /* Reduce logo size on mobile */
     }
 
     .navbar-brand {
@@ -415,40 +446,57 @@
         </section>
 
 
-        <div style="display: flex; justify-content: space-between; align-items: center; height: 500px;">
-    <!-- Left Section (Text over Image Background with Overlay) -->
-    <div style="position: relative; width: 50%; height: 400px; background-image: url('images/pexels-sevenstormphotography-443383.jpg'); background-size: cover;">
-        <!-- Overlay -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
-        <!-- Content Over Image -->
-        <div style="position: relative; z-index: 1; color: white; padding: 50px; display: flex; flex-direction: column; justify-content: center;">
-            <h1 style="font-size: 36px; font-weight: bold; color: white;">Committed to Effecting Sustainable Solution</h1>
-            <a href="Contact.html"><button style="width:175px; margin-top: 40px; padding: 10px 20px; background-color: #ffc107; color: black; border: none; font-size: 18px; cursor: pointer;">GET IN TOUCH</button></a>
+        <div style="display: flex; justify-content: space-between; align-items: center; height: 500px; flex-wrap: wrap;">
+            <!-- Left Section (Text over Image Background with Overlay) -->
+            <div style="position: relative; width: 50%; height: 400px; background-image: url('images/pexels-sevenstormphotography-443383.jpg'); background-size: cover;">
+                <!-- Overlay -->
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+                <!-- Content Over Image -->
+                <div style="position: relative; z-index: 1; color: white; padding: 50px; display: flex; flex-direction: column; justify-content: center;">
+                    <h1 style="font-size: 36px; font-weight: bold; color: white;">Committed to Effecting Sustainable Solution</h1>
+                    <a href="Contact.html"><button style="width:175px; margin-top: 40px; padding: 10px 20px; background-color: #ffc107; color: black; border: none; font-size: 18px; cursor: pointer;">GET IN TOUCH</button></a>
+                </div>
+            </div>
+            
+            <!-- Right Section (Text over Image Background with Yellow Overlay) -->
+            <div style="position: relative; width: 50%; height: 400px; background-image: url('images/pexels-pixabay-159306.jpg'); background-size: cover;">
+                <!-- Yellow Overlay -->
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 193, 7, 0.9);"></div>
+                <!-- Content Over Image -->
+                <div style="position: relative; z-index: 1; padding: 50px; color: black;">
+                    <h2 style="font-size: 28px; font-weight: bold;">We Follow Best Practices</h2>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 15px; font-size: 20px;">
+                            <span style="font-weight: bold;">&#x23F0;</span> On time Delivery
+                        </li>
+                        <li style="margin-bottom: 15px; font-size: 20px;">
+                            <span style="font-weight: bold;">&#x1F4BB;</span> Modern Technology
+                        </li>
+                        <li style="margin-bottom: 15px; font-size: 20px;">
+                            <span style="font-weight: bold;">&#x2705;</span> Quality Management
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <!-- Right Section (Text over Image Background with Yellow Overlay) -->
-    <div style="position: relative; width: 50%; height: 400px; background-image: url('images/pexels-pixabay-159306.jpg'); background-size: cover;">
-        <!-- Yellow Overlay -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 193, 7, 0.9);"></div>
-        <!-- Content Over Image -->
-        <div style="position: relative; z-index: 1; padding: 50px; color: black;">
-            <h2 style="font-size: 28px; font-weight: bold;">We Follow Best Practices</h2>
-            <ul style="list-style: none; padding-left: 0;">
-                <li style="margin-bottom: 15px; font-size: 20px;">
-                    <span style="font-weight: bold;">&#x23F0;</span> On time Delivery
-                </li>
-                <li style="margin-bottom: 15px; font-size: 20px;">
-                    <span style="font-weight: bold;">&#x1F4BB;</span> Modern Technology
-                </li>
-                <li style="margin-bottom: 15px; font-size: 20px;">
-                    <span style="font-weight: bold;">&#x2705;</span> Quality Management
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+        
+        <style>
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 24px; /* Smaller size for mobile */
+                }
+                h2 {
+                    font-size: 20px; /* Smaller size for mobile */
+                }
+                ul li {
+                    font-size: 16px; /* Smaller size for mobile */
+                }
+                button {
+                    font-size: 16px; /* Smaller button text */
+                }
+            }
+        </style>
+        
 <div class="section-title wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 170px; margin-bottom: 5px; text-align: center;">
     <h2>Our Latest Works</h2>
 </div>
